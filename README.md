@@ -40,6 +40,20 @@ calculadora-python/
 
 8. **CI/CD**: Um pipeline de Integração Contínua (CI) foi configurado (porém não foi feito teste, devido a necessidade de pagamento do Heroku) para executar testes automaticamente em cada commit, garantindo que apenas código validado seja mesclado à branch principal.
 
+Diagrama do pipeline de CI
+
+graph TD
+    A[Início] --> B[Commit ou Pull Request]
+    B --> C[Build Automatizado]
+    C --> D[Instalação de Dependências]
+    D --> E[Execução de Testes]
+    E --> F{Testes Passaram?}
+    F -->|Sim| G[Deploy em Homologação]
+    F -->|Não| H[Notificação de Erro]
+    H --> I[Correção de Código]
+    I --> B
+    G --> J[Fim]
+
 ### Build Automatizado
 
 O build é acionado automaticamente a cada commit e pull request na branch main, validando o código e instalando as dependências definidas em requirements.txt.

@@ -4,7 +4,14 @@ Uma calculadora simples em Python para o trabalho da disciplina Entrega Contínu
 
 ## Estrutura do Projeto
 
-calculadora-python/ ├── src/ # Código fonte │ └── calculadora.py # Implementação da calculadora ├── tests/ # Testes automatizados │ └── test_calculadora.py # Testes para a calculadora ├── requirements.txt # Dependências ├── .gitignore # Arquivos a serem ignorados └── README.md 
+calculadora-python/ 
+├── src/ # Código fonte 
+│ └── calculadora.py # Implementação da calculadora 
+├── tests/ # Testes automatizados 
+│ └── test_calculadora.py # Testes para a calculadora 
+├── requirements.txt # Dependências 
+├── .gitignore # Arquivos a serem ignorados 
+└── README.md 
 
 # Documentação do projeto
 

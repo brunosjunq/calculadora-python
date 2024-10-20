@@ -24,7 +24,7 @@ calculadora-python/
 
 # Documentação do projeto
 
-## Boas Práticas Utilizadas
+### Boas Práticas Utilizadas
 
 1. **Organização do Código**: O código-fonte foi organizado em diretórios claros (`src` e `tests`), separando a lógica da aplicação dos testes automatizados. Isso facilita a manutenção e a navegação no projeto.
 
@@ -40,17 +40,17 @@ calculadora-python/
 
 8. **CI/CD**: Um pipeline de Integração Contínua (CI) foi configurado (porém não foi feito teste, devido a necessidade de pagamento do Heroku) para executar testes automaticamente em cada commit, garantindo que apenas código validado seja mesclado à branch principal.
 
-## Build Automatizado
+### Build Automatizado
 
 O build é acionado automaticamente a cada commit e pull request na branch main, validando o código e instalando as dependências definidas em requirements.txt.
 
-## Testes Automatizados
+### Testes Automatizados
 
 Após a construção do ambiente, os testes automatizados são executados para garantir que o código esteja funcionando corretamente. O workflow está definido no arquivo .github/workflows/ci.yml, promovendo a confiabilidade do código.
 
 O uso do pytest garante que as funcionalidades da calculadora sejam testadas automaticamente, garantindo a integridade do código após alterações.
 
-## Documentação do Projeto
+# Execução
 
 ### Como Executar
 

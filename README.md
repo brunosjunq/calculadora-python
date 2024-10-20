@@ -16,6 +16,8 @@ calculadora-python/
 
 ├── requirements.txt # Dependências 
 
+├── Procfile                 # Indica como executar a aplicação no Heroku
+
 ├── .gitignore # Arquivos a serem ignorados 
 
 └── README.md 

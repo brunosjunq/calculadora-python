@@ -5,6 +5,7 @@ Uma calculadora simples em Python para o trabalho da disciplina Entrega Contínu
 ## Estrutura do Projeto
 
 calculadora-python/ 
+
 ├── src/ # Código fonte 
 
 │ └── calculadora.py # Implementação da calculadora 

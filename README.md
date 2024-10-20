@@ -44,7 +44,7 @@ calculadora-python/
 
 O build é acionado automaticamente a cada commit e pull request na branch main, validando o código e instalando as dependências definidas em requirements.txt.
 
-## Teste Automatizados
+## Testes Automatizados
 
 Após a construção do ambiente, os testes automatizados são executados para garantir que o código esteja funcionando corretamente. O workflow está definido no arquivo .github/workflows/ci.yml, promovendo a confiabilidade do código.
 

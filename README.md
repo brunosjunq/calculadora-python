@@ -38,9 +38,17 @@ calculadora-python/
 
 6. **Estrutura de Branches**: A estrutura de branches foi utilizada para desenvolvimento de novas funcionalidades e correções de bugs, permitindo trabalho paralelo e revisão de código.
 
-7. **Testes Automatizados**: O uso do pytest garante que as funcionalidades da calculadora sejam testadas automaticamente, garantindo a integridade do código após alterações.
-
 8. **CI/CD**: Um pipeline de Integração Contínua (CI) foi configurado (porém não foi feito teste, devido a necessidade de pagamento do Heroku) para executar testes automaticamente em cada commit, garantindo que apenas código validado seja mesclado à branch principal.
+
+## Build Automatizado
+
+O build é acionado automaticamente a cada commit e pull request na branch main, validando o código e instalando as dependências definidas em requirements.txt.
+
+## Teste Automatizados
+
+Após a construção do ambiente, os testes automatizados são executados para garantir que o código esteja funcionando corretamente. O workflow está definido no arquivo .github/workflows/ci.yml, promovendo a confiabilidade do código.
+
+O uso do pytest garante que as funcionalidades da calculadora sejam testadas automaticamente, garantindo a integridade do código após alterações.
 
 ## Documentação do Projeto
 

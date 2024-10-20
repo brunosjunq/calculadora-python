@@ -42,17 +42,26 @@ calculadora-python/
 
 Diagrama do pipeline de CI
 
-graph TD
-    A[Início] --> B[Commit ou Pull Request]
-    B --> C[Build Automatizado]
-    C --> D[Instalação de Dependências]
-    D --> E[Execução de Testes]
-    E --> F{Testes Passaram?}
-    F -->|Sim| G[Deploy em Homologação]
-    F -->|Não| H[Notificação de Erro]
-    H --> I[Correção de Código]
-    I --> B
-    G --> J[Fim]
+![image](https://github.com/user-attachments/assets/7eff6cd7-faae-4ef4-83b1-67a5c257486a)
+
+Descrição do Pipeline
+Início: O processo é iniciado por um commit ou pull request na branch principal (main).
+
+Build Automatizado: O pipeline executa o build automatizado, que é acionado automaticamente pelo evento de commit ou pull request.
+
+Instalação de Dependências: Durante a construção, as dependências definidas no arquivo requirements.txt são instaladas.
+
+Execução de Testes: O pipeline executa os testes automatizados usando o pytest para garantir que o código esteja funcionando corretamente.
+
+Testes Passaram?: O pipeline verifica se todos os testes passaram.
+
+Se Sim, prossegue para o próximo passo.
+Se Não, notifica a equipe sobre o erro e direciona para a correção do código.
+Correção de Código: O desenvolvedor revisa o código, faz as correções necessárias e envia um novo commit ou pull request, reiniciando o processo.
+
+Deploy em Homologação: Se todos os testes forem bem-sucedidos, o código pode ser implantado em um ambiente de homologação.
+
+Fim: O processo é concluído.
 
 ### Build Automatizado
 
